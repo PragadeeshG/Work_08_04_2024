@@ -1,0 +1,16 @@
+create table if not exists code_analysis(
+app_code integer not null,
+dependency_list integer null,
+third_party_source varchar(255) null,
+open_source_lib varchar(255) null,
+vulnerabiities varchar(255) null,
+data_flow_trace varchar(255) null,
+taint_analysis char null,
+find_bugs_plugin varchar(255) null,
+comprehensive_rule varchar(255) null,
+cloud_detection varchar(255) null,
+security_hotspots varchar(255) null,
+issue_description varchar(255) null,
+code_highlights varchar(255) null,
+file_system varchar(255) null,
+constraint code_analysis_pk primary key(app_code));

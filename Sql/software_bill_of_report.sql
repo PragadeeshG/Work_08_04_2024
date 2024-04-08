@@ -1,0 +1,15 @@
+create table if not exists software_bill_of_report(
+repo_code integer not null,
+repo_name varchar(255) null,
+branch_name varchar(255) null,
+feature_name varchar(255) null,
+build_id integer null,
+issues_count integer null,
+critical_issues_count integer null,
+trigerred_by varchar(255) null,
+approved_by varchar(255) null,
+total_components varchar(255) null,
+direct_dependencies varchar(255) null,
+transient_dependencies varchar(255) null,
+execution_summary varchar(255) null,
+constraint software_bill_of_report_pk primary key(repo_code)); 
